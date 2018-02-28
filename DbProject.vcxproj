@@ -79,16 +79,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="DataBase.cpp" />
+    <ClCompile Include="DatabaseController.cpp" />
+    <ClCompile Include="DatabaseUser.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainApplicationWindow.cpp" />
     <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="OdbcConnection.cpp" />
+    <ClCompile Include="SqlBinding.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="DataBase.h" />
+    <ClInclude Include="DatabaseController.h" />
+    <ClInclude Include="DatabaseUser.h" />
     <ClInclude Include="MainApplicationWindow.h" />
     <ClInclude Include="Observer.h" />
+    <ClInclude Include="OdbcConnection.h" />
+    <ClInclude Include="SqlBinding.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>

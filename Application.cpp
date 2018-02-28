@@ -3,7 +3,10 @@
 
 Application::Application()
 {
-	m_mainView = new MainApplicationWindow(L"MainApplicationWindow", L"Test Database Project");
+	m_dataBase = new DataBase;
+	m_databaseController = new DatabaseController(m_dataBase);
+	m_mainView = new MainApplicationWindow(L"MainApplicationWindow", L"Test Database Project", m_databaseController);
+
 }
 
 
@@ -13,6 +16,11 @@ Application::~Application()
 	{
 		delete m_mainView;
 		m_mainView = nullptr;
+	}
+	if (m_dataBase)
+	{
+		delete m_dataBase;
+		m_dataBase = nullptr;
 	}
 }
 
