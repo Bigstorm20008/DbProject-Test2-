@@ -11,6 +11,7 @@ public:
 	bool checkConnectionState() const;
 	void attachView(Observer*);
 	OdbcConnection* getDatabaseConnection() const;
+	std::wstring* getUserRole() const;
 private:
 	DataBase* m_database_model;
 };

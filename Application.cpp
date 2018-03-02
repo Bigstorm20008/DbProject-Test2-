@@ -22,6 +22,11 @@ Application::~Application()
 		delete m_dataBase;
 		m_dataBase = nullptr;
 	}
+	if (m_databaseController)
+	{
+		delete m_databaseController;
+		m_databaseController = nullptr;
+	}
 }
 
 int Application::run()

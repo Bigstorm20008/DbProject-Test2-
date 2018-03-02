@@ -53,11 +53,16 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Profile>true</Profile>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -79,27 +84,54 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="AuthenticationForm.cpp" />
+    <ClCompile Include="CashierControlPanel.cpp" />
+    <ClCompile Include="CashierInterface.cpp" />
+    <ClCompile Include="ClientView.cpp" />
+    <ClCompile Include="ControlPanel.cpp" />
     <ClCompile Include="DataBase.cpp" />
     <ClCompile Include="DatabaseController.cpp" />
     <ClCompile Include="DatabaseUser.cpp" />
+    <ClCompile Include="EditControlTemplate.cpp" />
+    <ClCompile Include="EmployeeView.cpp" />
+    <ClCompile Include="ImageTemplate.cpp" />
+    <ClCompile Include="ListView.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainApplicationWindow.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="OdbcConnection.cpp" />
     <ClCompile Include="SqlBinding.cpp" />
     <ClCompile Include="Subject.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+    <ClCompile Include="UserInterfaceController.cpp" />
+    <ClCompile Include="UserInterfaceFactory.cpp" />
+    <ClCompile Include="View.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
+    <ClInclude Include="AuthenticationForm.h" />
+    <ClInclude Include="CashierControlPanel.h" />
+    <ClInclude Include="CashierInterface.h" />
+    <ClInclude Include="ClientView.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="ControlPanel.h" />
     <ClInclude Include="DataBase.h" />
     <ClInclude Include="DatabaseController.h" />
     <ClInclude Include="DatabaseUser.h" />
+    <ClInclude Include="EditControlTemplate.h" />
+    <ClInclude Include="EmployeeView.h" />
+    <ClInclude Include="ImageTemplate.h" />
+    <ClInclude Include="ListView.h" />
     <ClInclude Include="MainApplicationWindow.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="OdbcConnection.h" />
     <ClInclude Include="SqlBinding.h" />
     <ClInclude Include="Subject.h" />
+    <ClInclude Include="UserInterface.h" />
+    <ClInclude Include="UserInterfaceController.h" />
+    <ClInclude Include="UserInterfaceFactory.h" />
+    <ClInclude Include="View.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

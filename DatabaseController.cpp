@@ -30,3 +30,8 @@ bool DatabaseController::checkConnectionState() const
 {
 	return m_database_model->isConnected();
 }
+
+std::wstring* DatabaseController::getUserRole() const
+{
+	return m_database_model->getUserRole();
+}

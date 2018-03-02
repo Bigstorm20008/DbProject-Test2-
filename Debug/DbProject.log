@@ -1,23 +1,67 @@
-﻿Сборка начата 28.02.2018 19:46:34.
+﻿Сборка начата 02.03.2018 8:19:40.
      1>Проект "D:\newProjects\DbProject\DbProject\DbProject.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MainApplicationWindow.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Application.cpp AuthenticationForm.cpp CashierControlPanel.cpp CashierInterface.cpp ClientView.cpp ControlPanel.cpp DataBase.cpp DatabaseController.cpp DatabaseUser.cpp EditControlTemplate.cpp EmployeeView.cpp ImageTemplate.cpp ListView.cpp main.cpp MainApplicationWindow.cpp Observer.cpp OdbcConnection.cpp SqlBinding.cpp Subject.cpp UserInterface.cpp UserInterfaceController.cpp UserInterfaceFactory.cpp View.cpp Window.cpp
+         Window.cpp
+         View.cpp
+         UserInterfaceFactory.cpp
+         UserInterfaceController.cpp
+         UserInterface.cpp
+         Subject.cpp
+         SqlBinding.cpp
+         OdbcConnection.cpp
+         Observer.cpp
          MainApplicationWindow.cpp
+         main.cpp
+         ListView.cpp
+         ImageTemplate.cpp
+         EmployeeView.cpp
+         EditControlTemplate.cpp
+     1>d:\newprojects\dbproject\dbproject\editcontroltemplate.cpp(118): warning C4065: оператор switch содержит метку "default", но не содержит ни одной метки "case"
+         DatabaseUser.cpp
+         DatabaseController.cpp
+         DataBase.cpp
+         ControlPanel.cpp
+         ClientView.cpp
+         Создание кода...
+         Компиляция...
+         CashierInterface.cpp
+         CashierControlPanel.cpp
+         AuthenticationForm.cpp
+         Application.cpp
+         Создание кода...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\newProjects\DbProject\Debug\DbProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\newProjects\DbProject\Debug\DbProject.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\newProjects\DbProject\Debug\DbProject.lib" /MACHINE:X86 Debug\Application.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\newProjects\DbProject\Debug\DbProject.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\newProjects\DbProject\Debug\DbProject.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\newProjects\DbProject\Debug\DbProject.lib" /MACHINE:X86 /PROFILE Debug\Application.obj
+         Debug\AuthenticationForm.obj
+         Debug\CashierControlPanel.obj
+         Debug\CashierInterface.obj
+         Debug\ClientView.obj
+         Debug\ControlPanel.obj
          Debug\DataBase.obj
          Debug\DatabaseController.obj
          Debug\DatabaseUser.obj
+         Debug\EditControlTemplate.obj
+         Debug\EmployeeView.obj
+         Debug\ImageTemplate.obj
+         Debug\ListView.obj
          Debug\main.obj
          Debug\MainApplicationWindow.obj
          Debug\Observer.obj
          Debug\OdbcConnection.obj
          Debug\SqlBinding.obj
          Debug\Subject.obj
+         Debug\UserInterface.obj
+         Debug\UserInterfaceController.obj
+         Debug\UserInterfaceFactory.obj
+         Debug\View.obj
          Debug\Window.obj
+     1>LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/PROFILE"
+     1>Application.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/OPT:LBR"
          DbProject.vcxproj -> D:\newProjects\DbProject\Debug\DbProject.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"D:\newProjects\DbProject\Debug\DbProject.bsc" /n Debug\Application.sbr Debug\AuthenticationForm.sbr Debug\CashierControlPanel.sbr Debug\CashierInterface.sbr Debug\ClientView.sbr Debug\ControlPanel.sbr Debug\DataBase.sbr Debug\DatabaseController.sbr Debug\DatabaseUser.sbr Debug\EditControlTemplate.sbr Debug\EmployeeView.sbr Debug\ImageTemplate.sbr Debug\ListView.sbr Debug\main.sbr Debug\MainApplicationWindow.sbr Debug\Observer.sbr Debug\OdbcConnection.sbr Debug\SqlBinding.sbr Debug\Subject.sbr Debug\UserInterface.sbr Debug\UserInterfaceController.sbr Debug\UserInterfaceFactory.sbr Debug\View.sbr Debug\Window.sbr
      1>Сборка проекта "D:\newProjects\DbProject\DbProject\DbProject.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
 
-Затраченное время: 00:00:01.33
+Затраченное время: 00:00:36.15

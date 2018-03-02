@@ -8,12 +8,26 @@ MainApplicationWindow::MainApplicationWindow(TCHAR* szClassName, TCHAR* szWindow
 	m_databaseController->attachView(this);
 	createWindow(NULL, WS_OVERLAPPEDWINDOW | WS_VISIBLE, 100, 30, 1000, 600);
 	update(NULL);
-	m_databaseController->connect(L"", L"");
 }
 
 
 MainApplicationWindow::~MainApplicationWindow()
 {
+	if (m_AuthenticationForm)
+	{
+		delete m_AuthenticationForm;
+		m_AuthenticationForm = nullptr;
+	}
+	if (m_userInterface)
+	{
+		delete m_userInterface;
+		m_userInterface = nullptr;
+	}
+	if (m_userInterfaceController)
+	{
+		delete m_userInterfaceController;
+		m_userInterfaceController = nullptr;
+	}
 	DestroyWindow(this->getHandle());
 }
 
@@ -21,11 +35,28 @@ void MainApplicationWindow::update(Subject* theChangedSubject)
 {
 	if (m_databaseController->checkConnectionState())
 	{
-		MessageBox(this->getHandle(), L"Database connected", L"", MB_OK);
+		if (m_AuthenticationForm)
+		{
+			delete m_AuthenticationForm;
+			m_AuthenticationForm = nullptr;
+		}
+		m_userInterfaceController = new UserInterfaceController(m_databaseController->getDatabaseConnection());
+		UserInterfaceFactory factory(this->getHandle(), m_userInterfaceController);
+		m_userInterface = factory.createUserInterfaceFor(m_databaseController->getUserRole());
 	}
 	else
 	{
-		MessageBox(this->getHandle(), L"Database not connected", L"", MB_OK);
+		if (m_userInterface)
+		{
+			delete m_userInterface;
+			m_userInterface = nullptr;
+		}
+		if (m_userInterfaceController)
+		{
+			delete m_userInterfaceController;
+			m_userInterfaceController = nullptr;
+		}
+		m_AuthenticationForm = new AuthenticationForm(this->getHandle(), L"AuthenticationWindow", L"Аутентификация", m_databaseController);
 	}
 }
 
